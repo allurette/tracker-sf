@@ -3,12 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lumine</title>
+    <title>Health Companion - Home</title>
     <link rel="stylesheet" href="style.css">
-    <script type="py" src="main.py"></script>
+    <script src="script.js" defer></script>
 </head>
 <body>
+    <div class="container">
+        <div class="menu">
+            <h1 class="menu-title">Health Companion</h1>
+            <nav class="menu-links">
+                <a href="index.html">Home</a>
+                <a href="settings.html">Settings</a>
+            </nav>
+        </div>
+    </div>
 
-    
+    <div class="content">
+        <div class="intro-text">
+            <h2 id="greeting">Welcome!</h2>
+            <p id="avgCycleDisplay">Average Cycle Length: 28 days</p>
+        </div>
+
+        <div class="input-box">
+            <label for="currentDayInput">What is your current cycle day?</label>
+            <input id="currentDayInput" type="number" min="1" placeholder="Enter cycle day (e.g. 4)">
+            <button id="checkDayButton">Check Phase</button>
+        </div>
+
+        <div class="screen-box">
+            <h3 id="phaseOutput">Enter your cycle day above to check your phase.</h3>
+            <p id="dailyMssgOutput"></p>
+        </div>
+    </div>
 </body>
 </html>
